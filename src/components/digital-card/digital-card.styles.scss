@@ -2,6 +2,10 @@
     &-card {
         min-height: 275px;
         margin: 15px 0 0 45px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &-img {
@@ -19,6 +23,16 @@
 .footer-label {
     position: absolute;
     bottom: 25px;
+}
+
+.modal-body .digital-card {
+    min-height: 275px;
+    margin: 0;
+    border: none;
+
+    &:hover {
+        cursor: default;
+    }
 }
 
 @media (max-width: 768px) {
