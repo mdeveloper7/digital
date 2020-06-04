@@ -1,6 +1,7 @@
 import React from 'react';
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import DigitalCard from '/components/digital-card/digital-card.component';
+import MobileSearch from '/components/mobile-search/mobile-search.component';
 import MovieDialog from '/components/movie-dialog/movie-dialog.component';
 import { selectIsFetching, selectMoviesList } from '/redux/movies/movies.selectors';
 import { createStructuredSelector } from 'reselect';
@@ -20,6 +21,7 @@ const Main = ({ isFetching, movies }) => {
         <>
             <MovieDialog open={open} show={setOpen} movie={selectedMovie}/>
             <PerfectScrollbar>
+                <MobileSearch />
                 <div>{isFetching && 'Loading...'}</div>
                 {
                     movies &&
