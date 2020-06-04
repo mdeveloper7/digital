@@ -1,0 +1,39 @@
+.digital {
+    &-card {
+        min-height: 275px;
+        margin: 15px 0 0 45px;
+    }
+
+    &-img {
+        margin: 20px;
+        width: 20%;
+        min-width: 150px;
+    }
+
+    &-content {
+        margin: 20px 0 20px 0;
+        width: 70%;
+    }
+}
+
+.footer-label {
+    position: absolute;
+    bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .digital {
+        &-card {
+            margin: 15px 45px 0 45px;
+        }
+
+        &-content {
+            width: 100%;
+        }
+    }
+
+    .footer-label {
+        position: absolute;
+        bottom: 5px;
+    }
+}

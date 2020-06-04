@@ -7,8 +7,8 @@ import history from '/utils/history';
  * @returns {React.ReactNode}
  */
 const ProtectedRoute = ({ children }) => {
-    const [isVerified, setIsVerified] = useState(false)
-    const { authUser } = useSelector(state => state.user)
+    const [isVerified, setIsVerified] = useState(false);
+    const { authUser } = useSelector(state => state.user);
     
     async function verify() {
         if (!authUser) {
@@ -24,7 +24,7 @@ const ProtectedRoute = ({ children }) => {
     }, [])
 
     if (isVerified) {
-        return children
+        return children;
     }
     else return null;
 }

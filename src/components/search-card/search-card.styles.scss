@@ -1,0 +1,26 @@
+.search {
+    &-card {
+        left: 0;
+        top: 15px;
+    }
+
+    &-content{
+        margin: 20px 15px 20px 15px;
+    }
+
+    &-icon{
+        margin-top: 12px;
+    }
+
+    &-calendar{
+        margin-top: 10px;
+    }
+}
+
+.search-content div input{
+    color: black;
+
+    &:focus {
+        color: black;   
+    }
+}

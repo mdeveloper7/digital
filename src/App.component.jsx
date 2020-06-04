@@ -13,7 +13,7 @@ const App = () => {
     <Suspense fallback={<div>Loading... </div>}>
       <Redirect
         from="/"
-        to="/auth" />
+        to="/admin" />
       <Switch>
         <Route path={'/auth'}>
           <AuthLayout />

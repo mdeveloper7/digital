@@ -1,0 +1,16 @@
+.form-control {
+    border: 0;
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 0;
+    font-size: 16px;
+    background-color:transparent;
+    color: white;
+    &::placeholder {
+        color: #b0adad;
+    }
+
+    &:focus {
+        background-color:transparent;
+        color: white;
+    }
+}

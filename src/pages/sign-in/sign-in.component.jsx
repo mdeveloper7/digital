@@ -61,8 +61,8 @@ const SignIn = ({ dispatch }) => {
                 </Form>
                 <Link to={'/auth/sign-up'} className="auth-link">Create a new account</Link>
                 <p className="login-wrapper-footer-text">To enter use this email and password
-                    <br />email: miguel@digital.com
-                    <br />pass: admin
+                    <br /><span className="bold">Email: miguel@digital.com</span>
+                    <br /><span className="bold">Pass: admin</span>
                 </p>
             </div>
         </>
