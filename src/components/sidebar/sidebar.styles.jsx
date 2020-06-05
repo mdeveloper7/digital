@@ -1,4 +1,6 @@
-.sidebar {
+import styled from 'styled-components'
+
+export const SideBarContent = styled.div`
     top: 0;
     bottom: 0;
     left: 0;
@@ -9,17 +11,4 @@
     width: 260px;
     background-color: #3c3d40;
     color: white;
-}
-
-.nav-link {
-    padding: 35px 35px 0; 
-    font-size: 16px;
-}
-
-.nav-icon {
-    float: right;
-    margin-top: 3px;
-    &:hover {
-        cursor: pointer;
-    }
-}
+`

@@ -4,6 +4,7 @@ import logo from '/assets/images/logo.png';
 import { connect } from 'react-redux';
 import { setAuthUser } from '/redux/user/user.actions';
 import { Link } from "react-router-dom";
+import { FooterAuthInfo, ErrorMessage } from './sign-in.styles';
 
 /**constants
 /**@default */
@@ -56,14 +57,16 @@ const SignIn = ({ dispatch }) => {
                         <label htmlFor="password">Password</label>
                         <input type="password" name="password" id="password" className="form-control" placeholder="Enter your passsword" onChange={handleChange} />
                     </Form.Group>
-                    <small className="error-message">{form.errorMessage}</small>
+                    <ErrorMessage>{form.errorMessage}</ErrorMessage>
                     <Button name="login" id="login" className="btn-block form-btn" onClick={signIn}>Login</Button>
                 </Form>
                 <Link to={'/auth/sign-up'} className="auth-link">Create a new account</Link>
-                <p className="login-wrapper-footer-text">To enter use this email and password
-                    <br /><span className="bold">Email: miguel@digital.com</span>
-                    <br /><span className="bold">Pass: admin</span>
-                </p>
+
+                <p className="login-wrapper-footer-text">To enter use this email and password</p>
+                <FooterAuthInfo>
+                    <br /><span>Email: miguel@digital.com</span>
+                    <br /><span>Pass: admin</span>
+                </FooterAuthInfo>
             </div>
         </>
     )
